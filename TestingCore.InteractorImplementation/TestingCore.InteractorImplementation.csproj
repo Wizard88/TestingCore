@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{20407A7B-DAEE-4746-B1DD-A821EABE7A5C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TestingCore.InteractorImplementation</RootNamespace>
+    <AssemblyName>TestingCore.InteractorImplementation</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DetectionInteractionFTDI.cs" />
+    <Compile Include="DetectionInteractorMultimeter.cs" />
+    <Compile Include="Factory.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TurnsRatioTestInteractor.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TestingCore.CommandAbstraction\TestingCore.CommandAbstraction.csproj">
+      <Project>{11E3DD77-1DA5-44D8-9CFE-D33D430E6C8D}</Project>
+      <Name>TestingCore.CommandAbstraction</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TestingCore.CommandFactory\TestingCore.CommandFactory.csproj">
+      <Project>{dc7ef858-b398-4b67-a12f-8f4230e383c5}</Project>
+      <Name>TestingCore.CommandFactory</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TestingCore.CommunicationAbstraction\TestingCore.CommunicationAbstraction.csproj">
+      <Project>{d7b57457-4f77-4539-bccd-d1ebdd277fa5}</Project>
+      <Name>TestingCore.CommunicationAbstraction</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TestingCore.CommunicationFactory\TestingCore.CommunicationFactory.csproj">
+      <Project>{3fa29c34-5f24-419d-a6ea-605209baef19}</Project>
+      <Name>TestingCore.CommunicationFactory</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TestingCore.InteractorAbstraction\TestingCore.InteractorAbstraction.csproj">
+      <Project>{4C539EB6-3ECF-4B0C-974C-1B3E0CB44AA5}</Project>
+      <Name>TestingCore.InteractorAbstraction</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TestingCore.InteractorFactory\TestingCore.InteractorFactory.csproj">
+      <Project>{f55fec39-9b20-4dcd-8e17-0052b9f52769}</Project>
+      <Name>TestingCore.InteractorFactory</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TestingCore.PresenterAbstraction\TestingCore.PresenterAbstraction.csproj">
+      <Project>{CF38DA0F-1191-4B1F-80E4-A60314C00E22}</Project>
+      <Name>TestingCore.PresenterAbstraction</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TestingCore.TransactionAbstraction\TestingCore.TransactionAbstraction.csproj">
+      <Project>{746914B9-8FAF-4694-A182-012B7F228BA2}</Project>
+      <Name>TestingCore.TransactionAbstraction</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
