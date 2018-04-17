@@ -1,4 +1,6 @@
-﻿namespace UI.ViewAbstraction
+﻿using System;
+
+namespace UI.ViewAbstraction
 {
     public interface IView
     {
@@ -6,5 +8,8 @@
         void ShowViewAsDialog();
         void CloseView();
         void SetParent(object parent);
+
+        event EventHandler Shown;
+        event EventHandler Closed;
     }
 }

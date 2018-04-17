@@ -12,10 +12,10 @@ namespace TestingCore.InteractorImplementation
         private ICommand _startCommand;
         private ICommand _stopCommand;
 
-        public TurnsRatioTestInteractor(ITestPresenter presenter, ITransaction transaction)
+        public TurnsRatioTestInteractor(ITransaction transaction, ITestPresenter presenter)
         {
-            _presenter = presenter;
             _transaction = transaction;
+            _presenter = presenter;
             _startCommand = TestingCore.CommandFactory.Scope.Factory.CreateStartTestCommand();
             _stopCommand = TestingCore.CommandFactory.Scope.Factory.CreatStopTestCommand();
         }

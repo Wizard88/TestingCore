@@ -51,9 +51,9 @@
             // lblHelp
             // 
             this.lblHelp.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.lblHelp.Location = new System.Drawing.Point(395, 271);
+            this.lblHelp.Location = new System.Drawing.Point(557, 410);
             this.lblHelp.Name = "lblHelp";
-            this.lblHelp.Size = new System.Drawing.Size(82, 23);
+            this.lblHelp.Size = new System.Drawing.Size(133, 23);
             this.lblHelp.TabIndex = 32;
             this.lblHelp.Text = "Help";
             this.lblHelp.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -68,9 +68,9 @@
             this.btnHelp.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.btnHelp.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.btnHelp.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.btnHelp.Location = new System.Drawing.Point(395, 297);
+            this.btnHelp.Location = new System.Drawing.Point(560, 436);
             this.btnHelp.Name = "btnHelp";
-            this.btnHelp.Size = new System.Drawing.Size(82, 71);
+            this.btnHelp.Size = new System.Drawing.Size(130, 110);
             this.btnHelp.TabIndex = 3;
             this.btnHelp.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnHelp.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
@@ -80,9 +80,9 @@
             // lblAbout
             // 
             this.lblAbout.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.lblAbout.Location = new System.Drawing.Point(483, 271);
+            this.lblAbout.Location = new System.Drawing.Point(710, 410);
             this.lblAbout.Name = "lblAbout";
-            this.lblAbout.Size = new System.Drawing.Size(88, 23);
+            this.lblAbout.Size = new System.Drawing.Size(132, 23);
             this.lblAbout.TabIndex = 30;
             this.lblAbout.Text = "About";
             this.lblAbout.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -97,9 +97,9 @@
             this.btnAbout.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.btnAbout.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.btnAbout.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.btnAbout.Location = new System.Drawing.Point(486, 297);
+            this.btnAbout.Location = new System.Drawing.Point(713, 436);
             this.btnAbout.Name = "btnAbout";
-            this.btnAbout.Size = new System.Drawing.Size(82, 71);
+            this.btnAbout.Size = new System.Drawing.Size(130, 110);
             this.btnAbout.TabIndex = 4;
             this.btnAbout.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnAbout.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
@@ -108,10 +108,10 @@
             // 
             // lblSettings
             // 
-            this.lblSettings.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.lblSettings.Location = new System.Drawing.Point(443, 84);
+            this.lblSettings.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lblSettings.Location = new System.Drawing.Point(595, 128);
             this.lblSettings.Name = "lblSettings";
-            this.lblSettings.Size = new System.Drawing.Size(143, 23);
+            this.lblSettings.Size = new System.Drawing.Size(215, 23);
             this.lblSettings.TabIndex = 29;
             this.lblSettings.Text = "Settings";
             this.lblSettings.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -127,9 +127,9 @@
             this.btnSettings.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.btnSettings.ForeColor = System.Drawing.SystemColors.ActiveBorder;
             this.btnSettings.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnSettings.Location = new System.Drawing.Point(443, 109);
+            this.btnSettings.Location = new System.Drawing.Point(595, 154);
             this.btnSettings.Name = "btnSettings";
-            this.btnSettings.Size = new System.Drawing.Size(143, 146);
+            this.btnSettings.Size = new System.Drawing.Size(215, 203);
             this.btnSettings.TabIndex = 2;
             this.btnSettings.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnSettings.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
@@ -145,10 +145,11 @@
             this.gbCommunication.Controls.Add(this.cbCalbox);
             this.gbCommunication.Controls.Add(this.lblMultimeter);
             this.gbCommunication.Controls.Add(this.cbMultimeter);
+            this.gbCommunication.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gbCommunication.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.gbCommunication.Location = new System.Drawing.Point(17, 12);
+            this.gbCommunication.Location = new System.Drawing.Point(53, 12);
             this.gbCommunication.Name = "gbCommunication";
-            this.gbCommunication.Size = new System.Drawing.Size(637, 52);
+            this.gbCommunication.Size = new System.Drawing.Size(789, 66);
             this.gbCommunication.TabIndex = 28;
             this.gbCommunication.TabStop = false;
             this.gbCommunication.Text = "Connected devices";
@@ -159,10 +160,11 @@
             this.cbDevice.DisplayMember = "View";
             this.cbDevice.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbDevice.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.cbDevice.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbDevice.FormattingEnabled = true;
-            this.cbDevice.Location = new System.Drawing.Point(82, 19);
+            this.cbDevice.Location = new System.Drawing.Point(132, 20);
             this.cbDevice.Name = "cbDevice";
-            this.cbDevice.Size = new System.Drawing.Size(110, 21);
+            this.cbDevice.Size = new System.Drawing.Size(120, 28);
             this.cbDevice.TabIndex = 0;
             this.cbDevice.TabStop = false;
             this.cbDevice.ValueMember = "Value";
@@ -171,18 +173,18 @@
             // lblCalbox
             // 
             this.lblCalbox.AutoSize = true;
-            this.lblCalbox.Location = new System.Drawing.Point(434, 22);
+            this.lblCalbox.Location = new System.Drawing.Point(529, 26);
             this.lblCalbox.Name = "lblCalbox";
-            this.lblCalbox.Size = new System.Drawing.Size(50, 13);
+            this.lblCalbox.Size = new System.Drawing.Size(73, 16);
             this.lblCalbox.TabIndex = 9;
             this.lblCalbox.Text = "Calboxes";
             // 
             // lblDevice
             // 
             this.lblDevice.AutoSize = true;
-            this.lblDevice.Location = new System.Drawing.Point(13, 22);
+            this.lblDevice.Location = new System.Drawing.Point(45, 23);
             this.lblDevice.Name = "lblDevice";
-            this.lblDevice.Size = new System.Drawing.Size(46, 13);
+            this.lblDevice.Size = new System.Drawing.Size(65, 16);
             this.lblDevice.TabIndex = 7;
             this.lblDevice.Text = "Devices";
             // 
@@ -190,10 +192,11 @@
             // 
             this.cbCalbox.DisplayMember = "View";
             this.cbCalbox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbCalbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbCalbox.FormattingEnabled = true;
-            this.cbCalbox.Location = new System.Drawing.Point(507, 19);
+            this.cbCalbox.Location = new System.Drawing.Point(624, 19);
             this.cbCalbox.Name = "cbCalbox";
-            this.cbCalbox.Size = new System.Drawing.Size(110, 21);
+            this.cbCalbox.Size = new System.Drawing.Size(120, 28);
             this.cbCalbox.TabIndex = 2;
             this.cbCalbox.TabStop = false;
             this.cbCalbox.ValueMember = "Value";
@@ -202,9 +205,9 @@
             // lblMultimeter
             // 
             this.lblMultimeter.AutoSize = true;
-            this.lblMultimeter.Location = new System.Drawing.Point(215, 22);
+            this.lblMultimeter.Location = new System.Drawing.Point(274, 23);
             this.lblMultimeter.Name = "lblMultimeter";
-            this.lblMultimeter.Size = new System.Drawing.Size(63, 13);
+            this.lblMultimeter.Size = new System.Drawing.Size(91, 16);
             this.lblMultimeter.TabIndex = 8;
             this.lblMultimeter.Text = "Multimeters ";
             // 
@@ -212,10 +215,11 @@
             // 
             this.cbMultimeter.DisplayMember = "View";
             this.cbMultimeter.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbMultimeter.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbMultimeter.FormattingEnabled = true;
-            this.cbMultimeter.Location = new System.Drawing.Point(301, 19);
+            this.cbMultimeter.Location = new System.Drawing.Point(387, 20);
             this.cbMultimeter.Name = "cbMultimeter";
-            this.cbMultimeter.Size = new System.Drawing.Size(110, 21);
+            this.cbMultimeter.Size = new System.Drawing.Size(120, 28);
             this.cbMultimeter.TabIndex = 1;
             this.cbMultimeter.TabStop = false;
             this.cbMultimeter.ValueMember = "Value";
@@ -223,10 +227,10 @@
             // 
             // lblCalibration
             // 
-            this.lblCalibration.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.lblCalibration.Location = new System.Drawing.Point(264, 86);
+            this.lblCalibration.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lblCalibration.Location = new System.Drawing.Point(340, 128);
             this.lblCalibration.Name = "lblCalibration";
-            this.lblCalibration.Size = new System.Drawing.Size(143, 20);
+            this.lblCalibration.Size = new System.Drawing.Size(215, 23);
             this.lblCalibration.TabIndex = 27;
             this.lblCalibration.Text = "Calibration";
             this.lblCalibration.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -242,9 +246,9 @@
             this.btnCalibration.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.btnCalibration.ForeColor = System.Drawing.SystemColors.ActiveBorder;
             this.btnCalibration.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnCalibration.Location = new System.Drawing.Point(264, 109);
+            this.btnCalibration.Location = new System.Drawing.Point(340, 155);
             this.btnCalibration.Name = "btnCalibration";
-            this.btnCalibration.Size = new System.Drawing.Size(143, 146);
+            this.btnCalibration.Size = new System.Drawing.Size(215, 203);
             this.btnCalibration.TabIndex = 1;
             this.btnCalibration.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnCalibration.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
@@ -253,10 +257,10 @@
             // 
             // lblJustify
             // 
-            this.lblJustify.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.lblJustify.Location = new System.Drawing.Point(85, 83);
+            this.lblJustify.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lblJustify.Location = new System.Drawing.Point(85, 128);
             this.lblJustify.Name = "lblJustify";
-            this.lblJustify.Size = new System.Drawing.Size(143, 23);
+            this.lblJustify.Size = new System.Drawing.Size(215, 23);
             this.lblJustify.TabIndex = 26;
             this.lblJustify.Text = "Justify";
             this.lblJustify.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -272,9 +276,9 @@
             this.btnJustify.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.btnJustify.ForeColor = System.Drawing.SystemColors.ActiveBorder;
             this.btnJustify.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnJustify.Location = new System.Drawing.Point(85, 109);
+            this.btnJustify.Location = new System.Drawing.Point(85, 154);
             this.btnJustify.Name = "btnJustify";
-            this.btnJustify.Size = new System.Drawing.Size(143, 146);
+            this.btnJustify.Size = new System.Drawing.Size(215, 203);
             this.btnJustify.TabIndex = 0;
             this.btnJustify.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnJustify.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
@@ -286,7 +290,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(670, 380);
+            this.ClientSize = new System.Drawing.Size(894, 594);
             this.ControlBox = false;
             this.Controls.Add(this.lblHelp);
             this.Controls.Add(this.btnHelp);

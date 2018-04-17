@@ -1,4 +1,5 @@
-﻿using TestingCore.InteractorAbstraction;
+﻿using TestingCore.CommunicationAbstraction;
+using TestingCore.InteractorAbstraction;
 using TestingCore.InteractorFactory;
 using TestingCore.PresenterAbstraction;
 using TestingCore.TransactionAbstraction;
@@ -7,19 +8,15 @@ namespace TestingCore.InteractorImplementation
 {
     public class InteractorFactory : IFactory
     {
-        public IHardwareDetectionInteractor MakeDetectionInteractorMultimeter(IHardwareDetectionPresenter deviceDetectionPresenter)
+        public IHardwareDetectionInteractor MakeHardwareDetector(IHardwareDetection hardwareDetection, IHardwareDetectionPresenter deviceDetectionPresenter)
         {
-            return new DetectionInteractorMultimeter(deviceDetectionPresenter);
+            return new HardwareDetector(hardwareDetection, deviceDetectionPresenter);
         }
 
-        public IHardwareDetectionInteractor MakeDetectionInteractorFTDI(IHardwareDetectionPresenter deviceDetectionPresenter)
+        public ITestInteractor MakeTurnsRatioTestInteractor(ITransaction transaction, ITestPresenter presenter)
         {
-            return new DetectionInteractionFTDI(deviceDetectionPresenter);
+            return new TurnsRatioTestInteractor(transaction, presenter);
         }
 
-        public ITestInteractor MakeTurnsRatioTestInteractor(ITestPresenter presenter, ITransaction transaction)
-        {
-            return new TurnsRatioTestInteractor(presenter, transaction);
-        }
     }
 }

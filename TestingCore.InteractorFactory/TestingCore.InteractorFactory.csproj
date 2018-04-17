@@ -46,6 +46,10 @@
     <Compile Include="Scope.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\TestingCore.CommunicationAbstraction\TestingCore.CommunicationAbstraction.csproj">
+      <Project>{D7B57457-4F77-4539-BCCD-D1EBDD277FA5}</Project>
+      <Name>TestingCore.CommunicationAbstraction</Name>
+    </ProjectReference>
     <ProjectReference Include="..\TestingCore.InteractorAbstraction\TestingCore.InteractorAbstraction.csproj">
       <Project>{4C539EB6-3ECF-4B0C-974C-1B3E0CB44AA5}</Project>
       <Name>TestingCore.InteractorAbstraction</Name>

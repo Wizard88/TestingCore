@@ -22,14 +22,11 @@ namespace UI.ViewImplementation
             TestingCore.TransactionFactory.Scope.Factory = new TestingCore.TransactionImplementation.Factory();
             TestingCore.InteractorFactory.Scope.Factory = new TestingCore.InteractorImplementation.InteractorFactory();
             TestingCore.PresenterFactory.Scope.Factory = new TestingCore.PresenterImplementation.Factory();
-            UI.ViewFactory.Scope.Factory = new UI.ViewImplementation.TurnsRatioFactory();
+            UI.ViewFactory.Scope.Factory = new UI.ViewImplementation.Factory();
 
             var mainContainer = (Form)UI.ViewFactory.Scope.Factory.MakeMainContainer();
             _applicationContext = new AppContext(mainContainer);
-            var mainDialog = UI.ViewFactory.Scope.Factory.MakeMainDialog();
-
-            mainDialog.ShowView();
-
+          
             Application.Run(_applicationContext);
         }
     }

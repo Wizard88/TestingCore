@@ -6,26 +6,26 @@ using TestingCore.PresenterAbstraction.ResponseModel;
 
 namespace TestingCore.InteractorImplementation
 {
-    internal class DetectionInteractionFTDI : IHardwareDetectionInteractor
+    internal class HardwareDetector : IHardwareDetectionInteractor
     {
         private bool _isDisposed = false;
         private IHardwareDetectionPresenter _deviceDetectionPresenter;
-        private IHardwareDetection _detectorFTDI;
+        private IHardwareDetection _hardwareDetection;
 
-        public DetectionInteractionFTDI(IHardwareDetectionPresenter deviceDetectionPresenter)
+        public HardwareDetector(IHardwareDetection hardwareDetection, IHardwareDetectionPresenter deviceDetectionPresenter)
         {
+            _hardwareDetection = hardwareDetection;
             _deviceDetectionPresenter = deviceDetectionPresenter;
 
-            _detectorFTDI = CommunicationFactory.Scope.Factory.MakeFTDICommunication();
-            _detectorFTDI.Identified += DeviceIdentified;
-            _detectorFTDI.Inserted += DeviceInserted;
-            _detectorFTDI.Removed += DeviceRemoved;
+            _hardwareDetection.Identified += DeviceIdentified;
+            _hardwareDetection.Inserted += DeviceInserted;
+            _hardwareDetection.Removed += DeviceRemoved;
         }
 
         #region Interface members
         public void InitObserve()
         {
-            _detectorFTDI.Initialize();
+            _hardwareDetection.Initialize();
         }
 
         public void Dispose()
@@ -57,7 +57,7 @@ namespace TestingCore.InteractorImplementation
 
             if (disposing)
             {
-                if (_detectorFTDI != null) _detectorFTDI.Dispose();
+                if (_hardwareDetection != null) _hardwareDetection.Dispose();
             }
 
             _isDisposed = true;
